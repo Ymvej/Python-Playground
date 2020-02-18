@@ -1,0 +1,20 @@
+Programme 1 :
+
+Crée une variable a initialisée à 5.
+Crée une variable b initialisée à 2.
+
+Si a vaut 5 et b est inférieur à 2, alors le programme affiche
+une phrase.
+
+Programme 2 :
+
+Crée deux variables a et b initialisées respectivement à 2 et 4.
+
+Si a vaut 4 ou que b ne vaut pas 4, alors affiche un message de victoire.
+Sinon, si a vaut 4 ou que b vaut 4, affiche un message de presque victoire.
+
+Programme 3 : 
+
+Crée une variable a initialisée à 1.
+Si a vaut zero, affiche gagné.
+Si a vaut autre chose, affiche perdu.

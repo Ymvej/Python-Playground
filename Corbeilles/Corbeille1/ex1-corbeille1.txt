@@ -1,0 +1,4 @@
+1) Renvoie le texte "perdu"
+2) Renvoie le texte "gagné!"
+3) Renvoie le texte "un instant, s.v.p"
+4) Renvoie le texte "perdu"

@@ -12,26 +12,26 @@ from sklearn.preprocessing import LabelEncoder
 breast_cancer = load_breast_cancer()
 
 print(breast_cancer.target_names())
-# X = pd.DataFrame(breast_cancer.data,
-# columns = breast_cancer.feature_names)
-# y = pd.Categorical.from_codes(breast_cancer.target,
-# breast_cancer.target_names)
+X = pd.DataFrame(breast_cancer.data,
+columns = breast_cancer.feature_names)
+y = pd.Categorical.from_codes(breast_cancer.target,
+breast_cancer.target_names)
 
 
 
-# encoder = LabelEncoder()
-# binary_encoded_y = pd.Series(encoder.fit_transform(y))
+encoder = LabelEncoder()
+binary_encoded_y = pd.Series(encoder.fit_transform(y))
 
-# train_X, test_X, train_y, test_y = train_test_split(X,
-# binary_encoded_y, random_state=1)
+train_X, test_X, train_y, test_y = train_test_split(X,
+binary_encoded_y, random_state=1)
 
-# classifier = AdaBoostClassifier(
-#     DecisionTreeClassifier(max_depth=1),
-#     n_estimators=200
-# )
+classifier = AdaBoostClassifier(
+    DecisionTreeClassifier(max_depth=1),
+    n_estimators=200
+)
 
-# classifier.fit(train_X, train_y)
+classifier.fit(train_X, train_y)
 
-# predictions = classifier.predict(test_X)
+predictions = classifier.predict(test_X)
 
-# print(confusion_matrix(test_y, predictions))
+print(confusion_matrix(test_y, predictions))
